@@ -213,5 +213,6 @@ p {
 
   .why {
     flex-basis: 50%;
+    padding: 4rem;
   }
 }
