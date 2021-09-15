@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/JoshBoyer/social-proof-section-master.git
-- Live Site URL: https://joshboyer.github.io/social-proof-section-master/
+- Solution URL: https://github.com/JoshBoyer/single-price-grid-component-master.git
+- Live Site URL: https://joshboyer.github.io/single-price-grid-component-master/
 
 ## My process
 
