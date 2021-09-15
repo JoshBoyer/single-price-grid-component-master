@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --color-cyan: hsl(
+    179,
+    62%,
+    43%
+  ); /* Main heading color and subscription section background */
+  --color-cyan-light: hsl(178, 48%, 52%); /* Why section background  */
+  --color-yellow: hsl(71, 73%, 54%); /* Guarantee heading and sign up button */
+  --color-yellow-light: hsla(71, 73%, 54%, 0.7); /* sign up hover state */
+  --color-grey-light: hsl(204, 43%, 93%); /* body background */
+  --color-blue: hsl(218, 22%, 67%); /* Guarantee copy  */
+  --color-white: hsl(0, 0%, 100%);
+
+  --font-family: "Karla", sans-serif;
+  --font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--color-grey-light);
+}
+
+main {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.19px;
+  padding-bottom: 1.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.9375em 6.3296875em;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+}
+
+.btn--signup {
+  color: var(--color-white);
+  background-color: var(--color-yellow);
+  transition: background-color 150ms ease-in;
+}
+
+.btn--signup:hover,
+.btn--signup:focus {
+  background-color: var(--color-yellow-light);
+  cursor: pointer;
+}
+
+.card {
+  background-color: var(--color-white);
+  max-width: 311px;
+  display: flex;
+  flex-flow: column;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card__heading {
+  color: var(--color-cyan);
+  padding: 2.8rem 2.4rem 2.4rem;
+}
+
+.guarantee {
+  padding: 0 2.4rem 3.2rem;
+}
+
+.guarantee__heading {
+  font-size: 1.5rem;
+  color: var(--color-yellow);
+  padding-bottom: 1.6rem;
+}
+
+.guarantee__copy {
+  color: var(--color-blue);
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.17px;
+}
+
+.subscription {
+  background-color: var(--color-cyan);
+  color: var(--color-white);
+  padding: 2.4rem;
+}
+
+.subscription__heading {
+  color: var(--color-white);
+}
+
+.subscription__pricing {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  padding-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.subscription__pricing small {
+  font-size: 1.6rem;
+  color: hsla(0, 0%, 100%, 0.5);
+  padding-left: 1.1rem;
+}
+
+.subscription__copy {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.2px;
+  padding-bottom: 2.6rem;
+}
+
+.why {
+  background-color: var(--color-cyan-light);
+  color: var(--color-white);
+  padding: 2.4rem;
+}
+
+.why__list {
+  list-style: none;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 2.4rem;
+    letter-spacing: -0.3px;
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .btn {
+    padding: 0.905em 5.375em;
+  }
+
+  .card {
+    background-color: var(--color-white);
+    max-width: 635px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 0.8rem 0.8rem 0 0;
+  }
+
+  .card__heading {
+    padding: 4rem 4rem 2.4rem;
+  }
+
+  .guarantee {
+    padding: 0 4rem 4rem;
+  }
+
+  .guarantee__heading {
+    font-size: 1.8rem;
+    padding-bottom: 1.1rem;
+  }
+
+  .guarantee__copy {
+    font-size: 1.6rem;
+    letter-spacing: -0.2px;
+  }
+
+  .card__bottom {
+    display: flex;
+  }
+
+  .subscription {
+    flex-basis: 50%;
+    padding: 4rem;
+  }
+
+  .subscription__heading {
+    color: var(--color-white);
+  }
+
+  .why {
+    flex-basis: 50%;
+  }
+}
